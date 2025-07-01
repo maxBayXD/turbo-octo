@@ -958,3 +958,34 @@ html {
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary-dark);
 }
+
+/* Fix for white background around notch on Safari mobile */
+@supports (padding: max(0px)) {
+    body, header {
+        padding-left: min(0vmin, env(safe-area-inset-left));
+        padding-right: min(0vmin, env(safe-area-inset-right));
+        padding-top: min(0vmin, env(safe-area-inset-top));
+    }
+    
+    .hero {
+        padding-top: env(safe-area-inset-top);
+    }
+}
+
+/* Fallback for older browsers */
+body {
+    background-color: var(--darker);
+}
+
+/* Ensure full height on mobile Safari */
+html, body {
+    height: -webkit-fill-available;
+    min-height: -webkit-fill-available;
+}
+
+/* Fix for mobile Safari 100vh issue */
+.hero {
+    min-height: -webkit-fill-available;
+    height: 100vh;
+    height: -webkit-fill-available;
+}
