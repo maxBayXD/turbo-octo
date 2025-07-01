@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hues | Premium Post Production</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <a href="/" class="logo">
+                <img src="assets/images/Light.png" alt="Hues Post Production" />
+            </a>
+
+            <button class="mobile-menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <video autoplay muted loop>
+                <source src="assets/videos/COLOR GRADING SHOWREEL_HUES POST.mp4" type="video/mp4" />
+            </video>
+        </div>
+
+        <div class="container">
+            <div class="hero-content fade-in">
+                <h1>Where Vision Meets Precision</h1>
+                <p>
+                    Hues is a boutique post-production studio specializing in color
+                    grading, visual effects, and finishing for filmmakers and brands who
+                    demand exceptional quality.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Services</h2>
+                <p>
+                    End-to-end post-production for film, TV, and digital. Explore our core offerings.
+                </p>
+            </div>
+
+            <div class="services-list">
+                <div class="service-card fade-in delay-1">
+                    <div class="service-icon">
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <h3>Film Editing</h3>
+                    <a href="#" class="service-thumb" onclick="openLightbox(event, this)"
+                        data-video="https://www.youtube.com/embed/A127QLd0vvM">
+                        <img src="https://placehold.co/600x400/2A2A2A/FF6B6B" alt="Film Editing Example" />
+                        <span class="play-btn"><i class="fas fa-play"></i></span>
+                    </a>
+                    <div class="service-details">
+                        <p>Crafting seamless narratives and pacing for maximum impact. Every cut tells your story.</p>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in delay-2">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Color Grading</h3>
+                    <a href="#" class="service-thumb" onclick="openLightbox(event, this)"
+                        data-video="https://www.youtube.com/embed/7kkzJ6Tcuyw">
+                        <img src="https://placehold.co/600x400/2A2A2A/FF6B6B" alt="Color Grading Example" />
+                        <span class="play-btn"><i class="fas fa-play"></i></span>
+                    </a>
+                    <div class="service-details">
+                        <p>Enhancing mood and consistency with expert color work for a polished, cinematic look.</p>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in delay-3">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Visual Effects (VFX)</h3>
+                    <a href="#" class="service-thumb" onclick="openLightbox(event, this)"
+                        data-video="https://www.youtube.com/embed/jkNVYLnb2xU">
+                        <img src="https://placehold.co/600x400/2A2A2A/FF6B6B" alt="VFX Example" />
+                        <span class="play-btn"><i class="fas fa-play"></i></span>
+                    </a>
+                    <div class="service-details">
+                        <p>From subtle fixes to bold effects, we bring imagination to life and polish every frame.</p>
+                    </div>
+                </div>
+            
+                <div class="service-card fade-in delay-4">
+                    <div class="service-icon">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <h3>Animation (2D & 3D)</h3>
+                    <a href="#" class="service-thumb" onclick="openLightbox(event, this)"
+                        data-video="https://www.youtube.com/embed/jkNVYLnb2xU">
+                        <img src="https://placehold.co/600x400/2A2A2A/FF6B6B" alt="Animation Example" />
+                        <span class="play-btn"><i class="fas fa-play"></i></span>
+                    </a>
+                    <div class="service-details">
+                        <p>Dynamic 2D/3D animation and motion graphics to energize your story and engage audiences.</p>
+                    </div>
+                </div>
+
+                <div class="service-card fade-in delay-5">
+                    <div class="service-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Packaging & Mastering</h3>
+                    <a href="#" class="service-thumb" onclick="openLightbox(event, this)"
+                        data-video="https://www.youtube.com/embed/PbRYlTqgRmg">
+                        <img src="https://placehold.co/600x400/2A2A2A/FF6B6B" alt="">
+                        <span class="play-btn"><i class="fas fa-play"></i></span>
+                    </a>
+                    <div class="service-details">
+                        <p>Delivering your project in any format—DCP, broadcast, OTT, subtitles—ready for any screen.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Our Story</h2>
+                <p>
+                    Passionate about visual storytelling, we combine technical expertise with artistic vision.
+                </p>
+            </div>
+
+            <div class="about-content fade-in delay-1">
+                <p>
+                    Founded in 2015 by award-winning colorist James Wilson, Hues has grown from a one-person operation
+                    to a full-service post-production studio serving clients worldwide. Our team of editors, colorists,
+                    and VFX artists share a common goal: to bring your creative vision to life with unparalleled quality
+                    and attention to detail.
+                </p>
+                <p>
+                    We believe post-production is more than just technical work—it's the final stage of storytelling
+                    where raw footage transforms into a polished, emotionally resonant experience. Whether you're an
+                    independent filmmaker or a global brand, we treat every project with the care and dedication it
+                    deserves.
+                </p>
+                <p>
+                    Our boutique approach means you work directly with senior artists who understand your goals and can
+                    execute at the highest level. No junior operators, no assembly-line workflows—just premium
+                    craftsmanship from start to finish.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Meet Our Team</h2>
+                <p>
+                    A collective of creative professionals dedicated to excellence in post-production.
+                </p>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-member fade-in delay-1">
+                    <img src="/assets/images/team/1.png" alt="Sripasad Sahoo" />
+                    <h4>Sripasad Sahoo</h4>
+                    <p>Founder & Sr. Colorist</p>
+                </div>
+            </div>
+            <div class="team-grid">
+                <div class="team-member fade-in delay-2">
+                    <img src="/assets/images/team/2.png" alt="Biswajit Paita" />
+                    <h4>Biswajit Paita</h4>
+                    <p>Co-Founder & Sr. Editor</p>
+                </div>
+
+                <div class="team-member fade-in delay-3">
+                    <img src="/assets/images/team/3.png" alt="Aniruddha Mukherjee" />
+                    <h4>Aniruddha Mukherjee</h4>
+                    <p>Editor</p>
+                </div>
+
+                <div class="team-member fade-in delay-4">
+                    <img src="/assets/images/team/4.png" alt="Bijay Kumar Pradhan" />
+                    <h4>Bijay Kumar Pradhan</h4>
+                    <p>VFX Head</p>
+                </div>
+
+                <div class="team-member fade-in delay-5">
+                    <img src="/assets/images/team/5.png" alt="Ajay Sahoo" />
+                    <h4>Ajay Sahoo</h4>
+                    <p>Sr. Compositor</p>
+                </div>
+
+                <div class="team-member fade-in delay-6">
+                    <img src="/assets/images/team/6.png" alt="Swayamdeep Pattnaik" />
+                    <h4>Swayamdeep Pattnaik</h4>
+                    <p>Head of Animation</p>
+                </div>
+
+                <div class="team-member fade-in delay-7">
+                    <img src="/assets/images/team/7.png" alt="Srinivas Sahoo" />
+                    <h4>Srinivas Sahoo</h4>
+                    <p>Business Analyst</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Client Testimonials</h2>
+                <p>
+                    Don't just take our word for it—here's what our clients say about working with us.
+                </p>
+            </div>
+
+            <div class="testimonial fade-in delay-1">
+                <div class="testimonial-content">
+                    Hues transformed our documentary with their color grading expertise. They understood exactly the
+                    mood we were trying to achieve and elevated every frame. Their attention to detail and collaborative
+                    approach made them an essential part of our creative team.
+                </div>
+                <div class="testimonial-author">— David Miller, Director</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Get In Touch</h2>
+                <p>
+                    Ready to discuss your project? We'd love to hear from you.
+                </p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info fade-in delay-1">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                        <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@huespost.com</p>
+                        <p><i class="fas fa-clock"></i> Mon-Fri: 9AM - 6PM PST</p>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-form fade-in delay-2">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="editing">Film Editing</option>
+                                <option value="grading">Color Grading</option>
+                                <option value="vfx">Visual Effects</option>
+                                <option value="animation">Animation</option>
+                                <option value="sound">Sound Design</option>
+                                <option value="packaging">Packaging & Mastering</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Project Details</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="assets/images/Light.png" alt="Hues Post Production" />
+                    <div class="footer-about">
+                        <p>Premium post-production services for filmmakers and brands who demand exceptional quality.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Mumbai, India</p>
+                    <p><i class="fas fa-phone-alt"></i> +91 (555) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@huespost.com</p>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2023 Hues Post Production. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+            <iframe id="lightboxVideo" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
